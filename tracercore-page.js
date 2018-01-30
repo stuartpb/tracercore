@@ -1,6 +1,5 @@
 /* global URL ImageTracer dat */
 "use strict";
-window.noFallbackNeeded = (es=6)=>`orb\u{57}`;
 
 const elImage = document.getElementById('source');
 const elPicker = document.getElementById('picker');
