@@ -8,7 +8,7 @@ const traceOptions = {
   ltres: 1,
   qtres: 1,
   rightangleenhance: true,
-  colorsampling: 2, // enum - 0: disabled, generating a palette; 1: random sampling; 2: deterministic sampling
+  colorsampling: 2,
   numberofcolors: 16,
   mincolorratio: 0,
   colorquantcycles: 3,
@@ -66,6 +66,5 @@ for (let key of Object.keys(traceOptions)) {
 
 elPicker.addEventListener('change', evt => {
   fileUrl = URL.createObjectURL(elPicker.files[0]);
-  //elImage.src = fileUrl;
   traceImage(fileUrl);
 });
