@@ -54,9 +54,9 @@ for (let key of Object.keys(traceOptions)) {
   let controller = opts && opts.values ?
     gui.add(traceOptions, key, opts.values) : gui.add(traceOptions, key);
   if (opts) {
-    if (opts.min) controller.min(opts.min);
-    if (opts.max) controller.min(opts.max);
-    if (opts.step) controller.min(opts.step);
+    if (opts.min !== undefined) controller.min(opts.min);
+    if (opts.max !== undefined) controller.min(opts.max);
+    if (opts.step !== undefined) controller.min(opts.step);
   }
   controller.onFinishChange(traceImage);
 }
