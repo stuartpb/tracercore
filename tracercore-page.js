@@ -39,6 +39,8 @@ const optionConstraints = {
   numberofcolors: {min: 2, step: 1},
   mincolorratio: {min: 0},
   colorquantcycles: {min: 1, step: 1},
+  blurradius: {min: 0},
+  blurdelta: {min: 0, max: 1024},
   scale: {min: 0},
   roundcoords: {min: 0, max: 20, step: 1},
   lcpr: {min: 0},
